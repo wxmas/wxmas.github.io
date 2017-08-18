@@ -7,9 +7,7 @@ tags: Blog
 layout: post
 ---
 
-# 使用jekyll搭建GitHub博客 #
-
-## 1.[设置Git](https://help.github.com/articles/set-up-git/) ##
+## [设置Git](https://help.github.com/articles/set-up-git/) ##
 
 - [下载Git](https://git-scm.com/downloads)并安装
 - 打开Git Bash
@@ -30,7 +28,7 @@ layout: post
 	`email@example.com`
 	
 
-## 2.[安装Ruby](https://www.ruby-lang.org/en/downloads/) ##
+## [安装Ruby](https://www.ruby-lang.org/en/downloads/) ##
 
 Ruby，一种简单快捷的面向对象（面向对象程序设计）脚本语言，安装Jekyll需要电脑上安装Ruby，以下是安装步骤：
 
@@ -42,7 +40,7 @@ window系统下，可以使用[RubyInstaller](http://rubyinstaller.org/downloads
 
 > 注：用RubyInstaller安装Ruby之后都附带有Gems，如有需要可以单独下载RubyGems。网址为：https://rubygems.org/pages/download
 
-## 3.[使用Jekyll在本地设置您的GitHub页面站点](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) ##
+## [使用Jekyll在本地设置您的GitHub页面站点](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) ##
 
 jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务，例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。（注：我自己的没有绑定域名）
 
