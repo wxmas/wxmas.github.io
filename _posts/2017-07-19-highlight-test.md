@@ -43,7 +43,7 @@ def foo
 end
 {% endhighlight %}
 
-```c++ linenos
+```c++ 
 #include <iostream>
 
 using namespace std;
