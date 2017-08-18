@@ -22,20 +22,13 @@ layout: post
 	> Mona Lisa
 	```
 
-	`$ git config --global user.name "Mona Lisa"`
-
-	`$ git config --global user.name`
-
-	`> Mona Lisa`
-
 - 设置邮件 
 
-	`$ git config --global user.email "email@example.com"`
-	
-	`$ git config --global user.email`
-
-	`email@example.com`
-	
+	```git
+	$ git config --global user.email "email@example.com"
+	$ git config --global user.email
+	email@example.com
+	```
 
 ## 安装Ruby ##
 
@@ -72,17 +65,16 @@ window系统下，可以使用[RubyInstaller](http://rubyinstaller.org/downloads
 - 将准备好的jekyll主题（如[NexT主题](http://theme-next.simpleyyt.com/)）模板文件拷贝到本地项目目录中。
 - 然后用GitBash执行如下命令将本地项目push到GitHub项目中。
 
-	`$ git add .`
-
-	`$ git commit -m "some simple notes"`
-
-	`git push origin master`
+	```git
+	$ git add .
+	$ git commit -m "some simple notes"
+	git push origin master
+	```
 
 - 刷新访问yourusername.github.io，即可得到套用了主题的个人主页。
 
 	>NexT主题使用jekyll本地生成静态页面头一回调通了，后来重调时出现了这个问题：
-
-	>```ruby 
+	>```jekyll 
 	$ bundle exec jekyll server
 	Configuration file: D:/wxmas/wxmas.github.io/_config.yml
        Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.
@@ -105,7 +97,7 @@ window系统下，可以使用[RubyInstaller](http://rubyinstaller.org/downloads
 - 文件名称格式: 年-月-日-标题.MARKUP（例如: 2017-01-01-hello-world.md）。
 - 要有「头信息」。
 	
-	```ruby
+	```markdown
 	---
 	title: hello world
 	date: 2017-01-01 8:52:50 PM 
@@ -115,7 +107,7 @@ window系统下，可以使用[RubyInstaller](http://rubyinstaller.org/downloads
 	````
 即使都不写，也至少必须填上
 	
-	```ruby
+	```markdown
 	---
 	---
 	````
