@@ -41,7 +41,7 @@ foo_t *f = NULL;
 
 {% highlight C++ linenos %}
 void bar(sometype1 a, sometype2 *b);
-{% endhighligh %}
+{% endhighlight %}
 
 这个函数在a.cpp、b.cpp中调用了，分别是：
 
