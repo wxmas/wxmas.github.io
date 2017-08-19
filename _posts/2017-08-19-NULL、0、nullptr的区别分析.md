@@ -14,7 +14,7 @@ tags:
 
 在C语言中，我们使用NULL表示空指针，也就是我们可以写如下代码：
 
-{% highlight C linenos %}
+{% highlight c linenos %}
 int *i = NULL;
 foo_t *f = NULL;
 {% endhighlight %}
@@ -25,7 +25,7 @@ foo_t *f = NULL;
 
 也就是说NULL实际上是一个`void *`的指针，然后把`void *`指针赋值给`int *`和`foo_t *`的指针的时候，隐式转换成相应的类型。而如果换做一个C++编译器来编译的话是要出错的，因为C++是强类型的，`void *`是不能隐式转换成其他指针类型的，所以通常情况下，编译器提供的头文件会这样定义NULL：
 
-{% highlight C++ linenos %}
+{% highlight c++ linenos %}
 #ifdef __cplusplus ---简称：cpp c++ 文件
 #define NULL 0
 #else
