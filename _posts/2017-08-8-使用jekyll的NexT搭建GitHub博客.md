@@ -1,6 +1,6 @@
 ---
 title: 使用jekyll的NexT搭建GitHub博客
-date: 2017-8-8 6:16:29 PM 
+date: 2017-08-08 6:16:29 PM 
 categories:
 - Blog
 tags: Blog
