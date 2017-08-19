@@ -35,7 +35,7 @@ paginate_path: "/page:num/"
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md"]
 
 # Separator
-excerpt_separator: <!-- more -->
+#excerpt_separator: <!-- more -->
 
 # Code Highlighter
 ## 'pygments' is unsupported on GitHub Pages now.
@@ -263,9 +263,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
