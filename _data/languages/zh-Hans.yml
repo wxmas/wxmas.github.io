@@ -71,7 +71,7 @@ state:
   categories: 分类
 
 search:
-  placeholder: 搜索...
+  placeholder: Search for Posts
 
 cheers:
   um: 嗯..
