@@ -74,7 +74,7 @@ i = t0*64^0 + t1*64^1 + t2*64^2 + t3*64^3 + ...
 
 因此，bit count的实现代码如下：
 
-{highlight C++ linenos}
+{% highlight C++ linenos %}
 int bitcount(unsigned int n)  
 {  
     unsigned int tmp;  
@@ -88,7 +88,7 @@ int bitcount(unsigned int n)
   
     return (tmp%63);  
 }  
-{endhighlight}
+{% endhighlight %}
 
 但MIT HAKMEM最终的算法要比上面的代码更加简单一些。
 
@@ -104,7 +104,7 @@ int bitcount(unsigned int n)
 
 C代码：
 
-{highlight C linenos}
+{% highlight C linenos %}
 int bitcount(unsigned int n)  
 {  
     unsigned int tmp;  
@@ -117,7 +117,7 @@ int bitcount(unsigned int n)
   
     return (tmp%63);  
 }  
-{endhighlight}
+{% endhighlight %}
 
 注：代码中是使用8进制数进行MASK的，11位8进制数为33位2进制数，多出一位，因此第一位八进制数会把最高位舍去(7->3)以免超出int长度。
 
@@ -125,7 +125,7 @@ int bitcount(unsigned int n)
 
 MIT HAKMEM算法：
 
-{highlight C linenos}
+{% highlight C linenos %}
 int bitcount(unsigned int n)  
 {  
     unsigned int tmp;  
@@ -138,7 +138,7 @@ int bitcount(unsigned int n)
   
     return (tmp%63);  
 }  
-{endhighlight}
+{% endhighlight %}
 
 又减少了一组+, >>, &运算。被优化的是3位2进制数“组”内的计算。再回到多项式，一个3位2进制数是4a+2b+c，我们想要求的是a
 +b+c，n>>1的结果是2a+b，n>>2的结果是a。
