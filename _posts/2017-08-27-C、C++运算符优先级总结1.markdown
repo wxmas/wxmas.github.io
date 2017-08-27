@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C、C++运算符优先级总结
+title: C、C++运算符优先级总结1
 date: 2017-08-27 14:26
 categories:
 - C
