@@ -9,7 +9,7 @@ tags:
 ---
 
 >原文出处：[Integer与int的种种比较你知道多少？](http://www.cnblogs.com/liuling/archive/2013/05/05/intAndInteger.html)
->
+
 如果面试官问Integer与int的区别：估计大多数人只会说道两点，Ingeter是int的包装类，int的初值为0，Ingeter的初值为null。但是如果面试官再问一下Integer i = 1;int ii = 1; i==ii为true还是为false？估计就有一部分人答不出来了，如果再问一下其他的，估计更多的人会头脑一片混乱。所以我对它们进行了总结，希望对大家有帮助。
 
 首先看代码：
@@ -52,7 +52,7 @@ tags:
 
 22行的结果为true,而25行则为false,很多人都不动为什么。其实java在编译Integer i5 = 127的时候,被翻译成-> Integer i5 = Integer.valueOf(127);所以关键就是看valueOf()函数了。只要看看valueOf()函数的源码就会明白了。JDK源码的valueOf函数式这样的：
 
-{% hightlight Java linenos %}
+{% highlight Java linenos %}
 1 public static Integer valueOf(int i) {
 2         assert IntegerCache.high >= 127;
 3         if (i >= IntegerCache.low && i <= IntegerCache.high)
