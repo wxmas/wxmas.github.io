@@ -28,7 +28,7 @@ $ git config --global user.name
 > Mona Lisa
 {% endhighlight %}
 
-	````
+	```
 	$ git config --global user.name "Mona Lisa"
 	$ git config --global user.name
 	\> Mona Lisa
