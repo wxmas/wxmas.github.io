@@ -16,17 +16,6 @@ layout: post
 
 - 设置用户名
 
-{% highlight git linenos %}
-$ git config --global user.name "Mona Lisa"
-$ git config --global user.name
-\> Mona Lisa
-{% endhighlight %}
-
-{% highlight git linenos %}
-$ git config --global user.name "Mona Lisa"
-$ git config --global user.name
-> Mona Lisa
-{% endhighlight %}
 
 	```
 	$ git config --global user.name "Mona Lisa"
@@ -39,6 +28,18 @@ $ git config --global user.name
 	$ git config --global user.name
 	> Mona Lisa
 	```
+
+{% highlight git linenos %}
+$ git config --global user.name "Mona Lisa"
+$ git config --global user.name
+\> Mona Lisa
+{% endhighlight %}
+
+{% highlight git linenos %}
+$ git config --global user.name "Mona Lisa"
+$ git config --global user.name
+> Mona Lisa
+{% endhighlight %}
 
 - 设置邮件 
 
