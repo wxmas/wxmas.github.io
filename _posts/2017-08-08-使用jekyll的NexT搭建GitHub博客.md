@@ -19,15 +19,14 @@ layout: post
 	```git linenos
 	$ git config --global user.name "Mona Lisa"
 	$ git config --global user.name
-	> Mona Lisa
 	```
+
+	> Mona Lisa
 
 - 设置邮件 
 
 	```git
 	$ git config --global user.email "email@example.com"
-	$ git config --global user.email
-	email@example.com
 	```
 
 ## 安装Ruby ##
